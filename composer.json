@@ -30,9 +30,6 @@
         "sort-packages": true
     },
     "scripts": {
-        "post-install-cmd": [
-            "@prettier:config"
-        ],
         "post-update-cmd": [
             "@composer normalize"
         ],

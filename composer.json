@@ -12,6 +12,7 @@
     ],
     "require": {
         "php": "^8.5",
+        "composer-runtime-api": "^2.2",
         "mpietrucha/utility": "^1.0"
     },
     "require-dev": {
@@ -35,11 +36,11 @@
         "sort-packages": true
     },
     "scripts": {
-        "post-create-project-cmd": [
-            "@prettier:config"
-        ],
         "post-update-cmd": [
             "@composer normalize"
+        ],
+        "post-create-project-cmd": [
+            "@prettier:config"
         ],
         "lint": "pint --verbose --parallel",
         "prettier:config": "curl -sSLO https://raw.githubusercontent.com/mpietrucha/prettier/refs/heads/main/dist/.prettierrc",

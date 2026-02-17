@@ -5,6 +5,6 @@
     },
     "prettier": "@mpietrucha/prettier",
     "devDependencies": {
-        "@mpietrucha/prettier": "^1.0.6"
+        "@mpietrucha/prettier": "^1.0.10"
     }
 }

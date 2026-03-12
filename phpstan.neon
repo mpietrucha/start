@@ -1,5 +1,3 @@
-includes:
-    - vendor/mpietrucha/utility/extension.neon
 parameters:
     level: 8
     paths:

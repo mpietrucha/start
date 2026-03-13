@@ -13,7 +13,7 @@
     "require": {
         "php": "^8.5",
         "composer-runtime-api": "^2.2",
-        "mpietrucha/utility": "^1.0"
+        "mpietrucha/support": "^1.0"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "dev-main",

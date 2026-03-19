@@ -16,9 +16,10 @@
         "mpietrucha/support": "^1.0"
     },
     "require-dev": {
-        "ergebnis/composer-normalize": "dev-main",
-        "laravel/pint": "^1.29",
+        "ergebnis/composer-normalize": "^2.5",
+        "laravel/pint": "^1.2",
         "phpstan/phpstan": "^2.1",
+        "rector/rector": "^2.3",
         "symfony/var-dumper": "^7.2"
     },
     "minimum-stability": "dev",
@@ -44,6 +45,8 @@
         ],
         "lint": "pint --verbose",
         "prettier:config": "curl -sSLO https://raw.githubusercontent.com/mpietrucha/prettier/refs/heads/main/dist/.prettierrc",
+        "refactor": "vendor/bin/rector process --ansi",
+        "refactor:dry": "@refactor --dry-run",
         "test": [
             "@test:lint",
             "@test:types"

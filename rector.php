@@ -6,6 +6,7 @@ use Rector\CodingStyle\Rector\ArrowFunction\StaticArrowFunctionRector;
 use Rector\CodingStyle\Rector\Closure\StaticClosureRector;
 use Rector\Config\RectorConfig;
 use Rector\DeadCode\Rector\ClassMethod\RemoveUselessParamTagRector;
+use Rector\DeadCode\Rector\ClassMethod\RemoveUselessParamTagRector;
 use Rector\DeadCode\Rector\Expression\RemoveDeadStmtRector;
 use Rector\DeadCode\Rector\Node\RemoveNonExistingVarAnnotationRector;
 use RectorLaravel\Set\LaravelLevelSetList;
@@ -16,6 +17,7 @@ return RectorConfig::configure()
     ])
     ->withSkip([
         // RemoveUselessParamTagRector::class,
+        RemoveUselessParamTagRector::class,
         RemoveDeadStmtRector::class,
         RemoveNonExistingVarAnnotationRector::class,
     ])

@@ -16,10 +16,13 @@
         "mpietrucha/support": "^1.0"
     },
     "require-dev": {
+        "driftingly/rector-laravel": "^2.1",
         "ergebnis/composer-normalize": "^2.5",
         "laravel/pint": "^1.2",
+        "phpstan/extension-installer": "^1.4",
         "phpstan/phpstan": "^2.1",
         "rector/rector": "^2.3",
+        "rector/type-perfect": "^2.1",
         "symfony/var-dumper": "^7.2"
     },
     "minimum-stability": "dev",
@@ -31,7 +34,8 @@
     },
     "config": {
         "allow-plugins": {
-            "ergebnis/composer-normalize": true
+            "ergebnis/composer-normalize": true,
+            "phpstan/extension-installer": true
         },
         "optimize-autoloader": true,
         "sort-packages": true

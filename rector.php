@@ -15,7 +15,7 @@ return RectorConfig::configure()
         'src',
     ])
     ->withSkip([
-        RemoveUselessParamTagRector::class,
+        // RemoveUselessParamTagRector::class,
         RemoveDeadStmtRector::class,
         RemoveNonExistingVarAnnotationRector::class,
     ])
